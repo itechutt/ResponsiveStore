@@ -1,0 +1,182 @@
+*{
+    margin : 0px;
+    font-family: arial;
+}
+header {
+    position: relative; float : left;
+    width: 100%; height:50px; 
+    background:#111;
+
+}
+#summit{
+    position: relative; float:left;
+    height: 40px;
+    margin: 5px 0px 0px 0px;
+}
+
+#hamburguer{
+    position: relative;
+    float:left;
+    margin: 15px 10px 5px 10px; padding: 0px;
+    background: none;
+    border : 0px;
+    cursor: pointer;
+}
+#menuimg{
+    margin: -5px 0px 20px 0px;
+}
+#cuerpito{
+    background: #AAAAAA;
+}
+.article{
+    float:left;
+    height: 500px;
+    background: #ffffff;
+    width: calc(20% - 10px);
+    text-align: center;
+    margin: 5px 5px 0px 5px;
+    
+}
+.articleimg, .Brand, .Description, .Cost, .Rating, .Add{
+    display : flex; justify-content: center; align-items:center;
+}
+.articleimg{
+    width: calc(80% - 20px);
+    max-height: 280px;
+    margin: 10px 10px 0px 30px;
+    transition: 1.2s;
+}
+.articleimg:hover{
+    transform: scale(1.5);
+    border-style: solid;
+    border-color: #E3CD18;
+}
+.Brand{
+    height: 50px;
+    color:#E3CD18;
+    font-size: 15pt;
+    font-weight: bolder;
+    text-shadow: 1px 1px 1px #555;
+    width: calc(100% - 20px);
+    margin: 10px 10px 0px 10px;
+}
+.Description{
+    font-size: 10pt;
+    color : #aaaaaa;
+    font-weight: bold;
+    width: calc(100% - 20px);
+    margin: 10px 10px 0px 10px;
+}
+.Cost{
+    width: calc(100% - 20px);
+    color : #555555;
+    font-size: 15pt;
+    font-weight: bolder;
+    margin: 10px 10px 0px 10px;
+}
+.Rating{
+    height: 30px;
+    
+    width: calc(100% - 20px);
+    margin: 10px 10px 0px 10px;
+}
+.Add{
+    width: calc(50% - 20px);
+    height: 30px;
+    margin: 0px 10px 0px 75px;
+    text-align: center;
+    border: none;
+    cursor: pointer;
+    background: #D7C217;
+    color: #ffffff;
+        font-size: 12pt;
+        font-weight: bold;
+}
+.Add:hover{
+    background: #E3CD18;
+}
+/* Media queries */
+/*  PC  */
+@media only screen and (max-width:1280px){
+    .article{
+        width: calc(25% - 10px);
+    }   
+}
+/* Tablet */
+@media only screen and (max-width:1024px){
+    .article{
+        width: calc(50% - 10px);
+    }
+    .articleimg{
+        width: calc(50% - 50px);
+        margin: 10px 55px 0px 140px;
+    }
+    .Add{
+        margin: 0px 10px 0px 125px;
+    }
+}
+/* large smartphone */
+@media only screen and (max-width:800px){
+    .article{
+        position: relative;
+        float:right;
+        height: 175px;
+        display : flex; justify-content: end; align-items:center;
+        margin: 10px 10px 10px 10px; padding: 0px;
+        width: calc(100% - 20px);
+        
+    }
+    .articledata{
+        width: calc(40% - 10px);
+        height: 137.5px;
+    }
+    .articleaction{
+        width: calc(40% - 10px);
+        height: 137.5px;
+        margin: 0px 5px 0px 5px;
+    }
+    .articleimg {
+        position: relative; float:right;
+        margin: 15px 20px 10px 20px; padding: 0px;
+        width: calc(20% - 30px);
+    }
+    .Rating{
+        
+        display : flex; justify-content: center; align-items:center;
+        width: calc(100% - 20px);
+        margin: 10px 10px 0px 10px;
+    }
+    .Description{
+        margin: 10px 10px 0px 10px;
+        display : flex; justify-content: center; align-items:center;
+        width: calc(100% - 20px);
+    }
+    .Brand{
+        font-size: 10pt;
+        margin: 10px 10px 0px 10px;
+        display : flex; justify-content: center; align-items:center;
+        width: calc(100% - 20px);
+    }
+    .Cost{
+        display : flex; justify-content: center; align-items:center;
+        width: calc(100% - 20px);
+        margin: 10px 10px 0px 10px;
+    }
+    .Add{
+        display : flex; justify-content: center; align-items:center;
+        width: calc(100% - 50px);
+        margin: 10px 25px 0px 25px;
+        height: 50px;
+        color: #ffffff;
+        font-size: 15pt;
+        font-weight: bold;
+    }
+    
+}
+/* small smarthphone */
+@media only screen and (max-width:640px){
+    .Brand{
+        font-size: 8pt;
+    }
+    
+}
